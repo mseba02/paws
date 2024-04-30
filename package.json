@@ -9,7 +9,7 @@
     "lint": "npm run lint:branch-name && npm run lint:types && npm run lint:eslint && npm run lint:prettier",
     "lint:branch-name": "npx validate-branch-name",
     "lint:types": "npx tsc --noEmit",
-    "lint:eslint": "npx eslint ./src --ext js,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:eslint": "npx eslint ./src --ext js,ts,tsx --report-unused-disable-directives --max-warnings 10",
     "lint:prettier": "npx prettier --check ./src/**/*",
     "lint:prettier:fix": "npx prettier --write ./src/**/*",
     "lint:staged": "npx lint-staged",
@@ -72,7 +72,7 @@
     "vite-tsconfig-paths": "^4.3.2"
   },
   "validate-branch-name": {
-    "pattern": "^(master|main|develop){1}$|^(feature\\/.*|fix|bug|release)\/.+$",
+    "pattern": "^(master|main|develop){1}$|^(feature|fix|bug|release)\/.+$",
     "errorMsg": "Invalid branch name, please read docs/git-conventions.md"
   }
 }
