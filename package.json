@@ -72,7 +72,7 @@
     "vite-tsconfig-paths": "^4.3.2"
   },
   "validate-branch-name": {
-    "pattern": "^(master|main|develop){1}$|^(feature|fix|bug|release)\/.+$",
+    "pattern": "^(master|main|develop){1}$|^(feature\\/.*|fix|bug|release)\/.+$",
     "errorMsg": "Invalid branch name, please read docs/git-conventions.md"
   }
 }
